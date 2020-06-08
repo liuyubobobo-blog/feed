@@ -1,5 +1,147 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>https://github.com/liuyubobobo/my-blog</id><title>是不是很酷</title><updated>2020-06-01T18:28:55-07:00</updated><author><name>liuyubobobo</name><email>liuyubobobo@gmail.com</email></author><link href="https://github.com/liuyubobobo/my-blog" rel="alternate"/><generator uri="https://github.com/StdioA/bobobo-feed" version="0.0.1">bobobo-feed</generator><icon>https://www.gravatar.com/avatar/c4c67099540a54bd845d8e404fe8cc41</icon><subtitle>坚持有质量的技术原创，用技术人的视角看世界</subtitle><entry><id>2020/2020-05-31/readme.md</id><title>屠龙之术</title><updated>2020-05-31T00:00:00-07:00</updated><content>&lt;h2&gt;屠龙之术&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>https://github.com/liuyubobobo/my-blog</id><title>是不是很酷</title><updated>2020-06-08T03:57:54-07:00</updated><author><name>liuyubobobo</name><email>liuyubobobo@gmail.com</email></author><link href="https://github.com/liuyubobobo/my-blog" rel="alternate"/><generator uri="https://github.com/StdioA/bobobo-feed" version="0.0.1">bobobo-feed</generator><icon>https://www.gravatar.com/avatar/c4c67099540a54bd845d8e404fe8cc41</icon><subtitle>坚持有质量的技术原创，用技术人的视角看世界</subtitle><entry><id>2020/2020-06-07/readme.md</id><title>稀奇古怪面试题又三则</title><updated>2020-06-07T00:00:00-07:00</updated><content>&lt;h2&gt;稀奇古怪面试题又三则&lt;/h2&gt;
+&lt;p&gt;之前写过一篇文章，&lt;a href="https://github.com/liuyubobobo/my-blog/blob/master/2019/2019-06-10/"&gt;《稀奇古怪面试题三则》&lt;/a&gt;，翻出来一看，已经时隔一年了。着实吓了一跳。&lt;/p&gt;
+&lt;p&gt;然后想了想，这一年又遇到了一些有意思的问题。于是，在这里再分享三道“非典型”的面试问题：）&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;bobo 老师最近收到了一名同学的求助。这名同学正在和另外一名同学玩儿俄罗斯轮盘赌。&lt;/p&gt;
+&lt;p&gt;俄罗斯轮盘赌是指在一个有六个弹槽的左轮手枪中放入一颗子弹，随机旋转转轮后，关闭转轮。两人轮流把手枪对着自己的头扣动扳机。&lt;/p&gt;
+&lt;p&gt;俄罗斯轮盘赌赢者生，败者亡，极其残忍。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="gun" src="https://github.com/liuyubobobo/my-blog/raw/master/2020/2020-06-07/gun.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;当然，在现代社会中，我们不能拿生命做赌注。所以，两名同学使用橡胶子弹，并且约定，输者当即购买 bobo 老师的所有课程！&lt;/p&gt;
+&lt;p&gt;为了加快游戏速度，他们在一个玩具左轮手枪的&lt;strong&gt;连续两个&lt;/strong&gt;弹槽中都放入了子弹。&lt;/p&gt;
+&lt;p&gt;现在，第一个同学已经开枪了，结果为空弹。&lt;/p&gt;
+&lt;p&gt;第二个同学想知道，自己在第二枪输掉的概率有多大？（即自己开枪，发射出子弹的概率是多少？）&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;为了留给大家更多思考的空间，先给两个提示：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;提示 1&lt;/strong&gt;：注意，这两枚子弹是放在连续的两个弹槽中的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;提示 2&lt;/strong&gt;：对于很多概率问题，思考的关键是：总共有多少种可能？而我们关心的事件真正发生，会在多少种可能中出现？&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解析：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;六个弹槽，将两枚子弹填入连续的两个弹槽中，一共只有六种方式。&lt;/p&gt;
+&lt;p&gt;在下面，我用 X 表示子弹，o 表示空弹槽。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;XXoooo
+oXXooo
+ooXXoo
+oooXXo
+ooooXX
+XooooX&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;注意最后一种方式。因为弹槽形成了一个环，所以第一个弹槽和最后一个弹槽是相邻的。&lt;/p&gt;
+&lt;p&gt;现在，已知第一次扣动扳机，没有子弹。所以，上面的第一种布弹方式和最后一种布弹方式都被刨除了。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;XXoooo // 不可能
+oXXooo  
+ooXXoo
+oooXXo
+ooooXX
+XooooX // 不可能&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在剩下的四种方式中，只有 oXXooo 一种方式，在第二个弹槽中是子弹。&lt;/p&gt;
+&lt;p&gt;四种方式，一种中弹，所以答案是：1 / 4 = 25%。&lt;/p&gt;
+&lt;p&gt;同学，你这一轮只有 25% 的概率购买 bobo 老师的全部课程。祝你好运！&lt;/p&gt;
+&lt;p&gt;&lt;img alt="luck" src="https://github.com/liuyubobobo/my-blog/raw/master/2020/2020-06-07/luck.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;再来一道概率问题。&lt;/p&gt;
+&lt;p&gt;bobo 老师发明了一种神秘的算法，可以 &lt;strong&gt;100%&lt;/strong&gt; 的准确预测今天的天气！&lt;/p&gt;
+&lt;p&gt;诺贝尔奖级别有木有？&lt;/p&gt;
+&lt;p&gt;&lt;img alt="haha" src="https://github.com/liuyubobobo/my-blog/raw/master/2020/2020-06-07/haha.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;但是，bobo 老师觉得，100% 的准确度太没有意思了。这个世界的魅力就是不确定性啊！&lt;/p&gt;
+&lt;p&gt;所以，bobo 老师调整了算法，让&lt;strong&gt;它有 1/3 的概率说谎。&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;但是，bobo 老师还是觉得不满意，因为这不够酷。&lt;/p&gt;
+&lt;p&gt;bobo 老师决定将这个算法复制成三份。&lt;/p&gt;
+&lt;p&gt;这是受著名动画片《EVA》的启发。《EVA》动画片中的 MAGI 超级电脑，就是由三台可以独立思考的电脑组成的决策系统。这三台电脑，分别代表设计者赤木博士的三种身份：作为科学家的她；作为母亲的她；和作为女性的她。&lt;/p&gt;
+&lt;p&gt;这个系统也被称为是“三贤者”。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="eva" src="https://github.com/liuyubobobo/my-blog/raw/master/2020/2020-06-07/eva.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;当然了，bobo 老师没有这么厉害。所以，他的“天气预测三贤者”，其实是三台完全一致的，有 33% 的概率犯错（说谎）的算法。&lt;/p&gt;
+&lt;p&gt;今天，bobo 老师问“天气预测三贤者”：北京的天气怎么样？三个算法的回答都是：今天北京是晴天。&lt;/p&gt;
+&lt;p&gt;问：今天北京是晴天的概率是多少？&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解析：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;以下是我初始给出的解答，&lt;strong&gt;但是是错误的！！！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;只有在三个算法都在说谎的时候，北京才不是晴天。&lt;/p&gt;
+&lt;p&gt;所以，我们只要看三个算法都说慌的概率就好了。因为每个算法说谎的概率是 1/3，三个算法都说慌的概率就是 (1/3) * (1/3) * (1/3) = 1/27。&lt;/p&gt;
+&lt;p&gt;也就是只有 1/27 的概率，北京不是晴天。相应的，今天背景是晴天的概率就是 26/27，约为 96.3%。&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;以上解答是错误的！！！&lt;/strong&gt;为什么？因为当三台电脑都说今天是晴天的时候，&lt;strong&gt;概率空间已经变了&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;此时，或者三台电脑都说实话，概率是 8/27；或者是三台电脑都说谎话，概率是 1/27。其他的概率已经是 0 了。&lt;/p&gt;
+&lt;p&gt;只有三台电脑都说实话的时候，北京才是晴天。此时的概率是： 8/27 / (1/27 + 8/27) = 8/9。&lt;/p&gt;
+&lt;p&gt;我使用蒙特卡洛验证了一遍。我的蒙特卡洛验证代码：&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;h1&gt;include &lt;iostream&gt;&lt;/h1&gt;
+&lt;h1&gt;include &lt;vector&gt;&lt;/h1&gt;
+&lt;p&gt;using namespace std;&lt;/p&gt;
+&lt;p&gt;int main(){&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;int N = 100000000;
+srand (time(NULL));
+
+int total = 0, sunny = 0;
+while(N --){
+
+    int weather = rand() % 2; // 0 - cloudy, 1 - sunny；
+    int a , b, c;
+
+    if(weather)
+        a = rand() % 3 ? 1 : 0, b = rand() % 3 ? 1 : 0, c = rand() % 3 ? 1 : 0;
+    else
+        a = rand() % 3 ? 0 : 1, b = rand() % 3 ? 0 : 1, c = rand() % 3 ? 0 : 1;
+
+    if(a &amp;amp;&amp;amp; b &amp;amp;&amp;amp; c){
+        total ++;
+        sunny += !!weather;
+    }
+}
+
+cout &amp;lt;&amp;lt; sunny &amp;lt;&amp;lt; " " &amp;lt;&amp;lt; total &amp;lt;&amp;lt; " " &amp;lt;&amp;lt; (double)sunny / total &amp;lt;&amp;lt; endl;
+cout &amp;lt;&amp;lt; 8.0 / 9 &amp;lt;&amp;lt; endl;
+
+return 0;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;}
+```&lt;/p&gt;
+&lt;p&gt;使用以上验证，我们还将看到一个重要的事实：北京天气是阴天还是晴天的概率，也会影响最终结果！&lt;/p&gt;
+&lt;p&gt;实际上，这是一个条件概率的计算，可以带入条件概率公式获得结果。&lt;/p&gt;
+&lt;p&gt;假设事件 A 是三台机器都说今天是晴天；事件 B 是今天是晴天。这个问题求得就是 P(B | A)。&lt;/p&gt;
+&lt;p&gt;根据条件概率公式：P(B | A) = P(B &amp;amp; A) / P(A)&lt;/p&gt;
+&lt;p&gt;P(B &amp;amp; A) 就是今天确实是晴天，并且三台机器都说是晴天的概率。注意，这里就要对今天是晴天的概率做一个假设，假设为 p。则 P(B &amp;amp; A) = p * (2 / 3) ^ 3。&lt;/p&gt;
+&lt;p&gt;P(A) 则是三台机器说今天是晴天的概率。注意，一台机器说今天是晴天的概率，会因为今天是不是晴天而改变。如果今天是晴天，每台机器说是晴天的概率是 2/3，因为是实话；如果今天不是晴天，每台机器说是晴天的概率是 1/3，因为是谎话。所以，P(A) 正义就是 p * (2/3)^3 + (1 - p) * (1/3)^3&lt;/p&gt;
+&lt;p&gt;二者相除，就是答案。这里，这个 p 是约不掉的。 &lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;最后一个问题稍微难一点。&lt;/p&gt;
+&lt;p&gt;有一名同学突然联系 bobo 老师，因为他被绑架了！绑匪说，只有做对一个问题，才能放了他！&lt;/p&gt;
+&lt;p&gt;问题是这样的：&lt;/p&gt;
+&lt;p&gt;绑匪在一个桌子上，放了 &lt;strong&gt;100 张扑克牌，其中 10 张朝上，90 张朝下。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;绑匪将这名同学的眼镜蒙上。所以，这名同学无法看到哪张牌朝上，哪张牌朝下。这名同学也无法通过触觉，摸出来桌子上哪张牌朝上，哪张牌朝下。&lt;/p&gt;
+&lt;p&gt;现在，绑匪要求这名同学把桌子上的 100 张牌分成两堆儿。并且，&lt;strong&gt;在这两堆儿牌中，朝上的牌数量必须一致。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;问，这名同学要怎么操作，才能摆脱穷凶极恶的绑匪？&lt;/p&gt;
+&lt;p&gt;&lt;img alt="cry" src="https://github.com/liuyubobobo/my-blog/raw/master/2020/2020-06-07/cry.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;三个提示：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;提示 1&lt;/strong&gt;：将 100 张牌分成两堆儿，每堆儿牌不一定包含 50 张牌。一堆儿 49 张牌，另一堆儿 51 张牌，也是可以的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;提示 2&lt;/strong&gt;：虽然这名同学不能辨别每张牌的反正，但是，&lt;strong&gt;这名同学可以操纵这些牌。&lt;/strong&gt;比如：他可以拿起一张牌，把它翻过来，使得如果这张牌本来为正面朝上，变成反面朝上；本来反面朝上，变成正面朝上。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;提示 3&lt;/strong&gt;：因为有提示 2，所以，最终的结果，不一定两堆儿中正面朝上的牌的数量都是 5 张牌。&lt;strong&gt;只要正面朝上的牌相等就可以。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;你知道要怎么做吗？&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解析&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;可以这样操作：&lt;/p&gt;
+&lt;p&gt;这名同学先把这 100 张牌&lt;strong&gt;``分成两堆儿，一堆儿中有 10 张牌，另一堆儿中有 90 张牌。具体哪张牌在哪一堆儿，无所谓。&lt;/strong&gt;反正这名同学也辨别不出来。&lt;/p&gt;
+&lt;p&gt;然后，这名同学只需要&lt;strong&gt;把 10 张牌的那一堆儿中的每张牌都翻过来&lt;/strong&gt;，就好了。这么做就能得到满足题意的结果。&lt;/p&gt;
+&lt;p&gt;为了证明这一点，我们可以假设：在初始分堆儿的时候，90 张牌的那一堆儿中，有 x 张牌是朝上的。那么，在 10 张牌这一堆儿中，就有 10 - x 张牌是朝上的。&lt;/p&gt;
+&lt;p&gt;注意，x 也可以为 0。&lt;/p&gt;
+&lt;p&gt;现在，如果将 10 张牌中的那一堆儿中，所有的牌都翻一面儿，那么，原来的 10 - x 张朝上的牌，就变成朝下了；而原来 x 张朝下的牌，就朝上了。&lt;/p&gt;
+&lt;p&gt;现在，两堆儿中，都有 x 张牌朝上了。&lt;/p&gt;
+&lt;p&gt;营救任务完成：）&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;好啦，今天的分享到此结束。&lt;/p&gt;
+&lt;p&gt;等等，我突然又想到了一个问题！&lt;/p&gt;
+&lt;p&gt;今天的第一个问题是关于俄罗斯轮盘赌的。大家可以发现，在俄罗斯轮盘赌中，规则是：两人轮流把手枪&lt;strong&gt;对着自己扣动扳机。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;为什么规则不能是对着对方扣动扳机呢？&lt;/p&gt;
+&lt;p&gt;给大家分享一幅漫画，来自 Tom Fonder。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="comic" src="https://github.com/liuyubobobo/my-blog/raw/master/2020/2020-06-07/comic.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;论规则设计的重要性。🤔&lt;/p&gt;
+&lt;p&gt;是不是很酷？&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;大家加油！：）&lt;/strong&gt;&lt;/p&gt;</content><link href="https://github.com/liuyubobobo/my-blog/blob/master/2020/2020-06-07/readme.md" rel="alternate"/></entry><entry><id>2020/2020-05-31/readme.md</id><title>屠龙之术</title><updated>2020-05-31T00:00:00-07:00</updated><content>&lt;h2&gt;屠龙之术&lt;/h2&gt;
 &lt;p&gt;小时候，我最喜欢的故事，是屠龙术的故事。&lt;/p&gt;
 &lt;p&gt;说喜欢，或许不很恰当，或许只是觉得它神秘而有魅力。&lt;/p&gt;
 &lt;p&gt;屠龙术的故事源于庄子的《列御寇》，它只有简单的一句话：&lt;/p&gt;
@@ -3493,93 +3635,4 @@ When tomorrow comes!
 &lt;p&gt;其实，就在当下，对于很多人来讲，虚拟的网络生活，也已经成为了人们现实生活中，不可分割的一部分了。&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;怎么样？是不是很酷？&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;大家加油！&lt;/strong&gt;&lt;/p&gt;</content><link href="https://github.com/liuyubobobo/my-blog/blob/master/2019/2019-12-03/readme.md" rel="alternate"/></entry><entry><id>2019/2019-11-26/readme.md</id><title>软件工程师，工作效率，以及网易</title><updated>2019-11-26T00:00:00-07:00</updated><content>&lt;h2&gt;软件工程师，工作效率，以及网易&lt;/h2&gt;
-&lt;p&gt;软件工程师的核心任务，就是写代码。如何提高代码质量，减少 bug，提高软件开发效率，是软件行业的老大难问题。为了解决这个问题，无数的技术方案或者工具被发明了出来。&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;最典型的例子，就是各种编程范式的发明。比如面向对象，就是在使用抽象，封装，多态等多种形式，减少冗余代码，方便扩展，从而提高软件书写的效率，降低 bug 率。&lt;/p&gt;
-&lt;p&gt;函数式编程亦是如此。函数式编程提出“不可变数据”，就是为了减少因为改变各种状态变量产生的 bug。同时，在程序运行高度并行化的今天，不可变也保证了并行过程中的安全。&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;另一个出发点，就是语言。&lt;/p&gt;
-&lt;p&gt;如果仔细看各个语言最新版本引入的新机制，或者各种新特性的初衷，很多时候，都是和减少 bug，提高代码质量，提升开发效率联系在一起的。&lt;/p&gt;
-&lt;p&gt;比如对于现代编程语言的学习，要学习一块儿很大的内容，叫异常处理。但是，如果我们去看那些“上古语言”，FORTRAN，BASIC，甚至是 C，近乎完全没有专门的异常处理机制。异常处理是现代语言发明出的，专门“狙击” bug 的语言特性。&lt;/p&gt;
-&lt;p&gt;再比如，Swift 有一个很有意思的数据类型，叫可选型（Optional）。所谓的可选型，是指可以存储空的类型。换句话说，非可选型不能存储“空”。可选型本质上，就是从数据类型的角度，提醒开发者，这个变量可能为空，所以使用前，请判空！为什么要有这个全新的类型？因为大量的 bug，都和空指针有关。&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;再有，很多抽象的流程或者工具被发明了出来。&lt;/p&gt;
-&lt;p&gt;如果你翻开一本软件工程的课本，大概就会接触到如下这些概念：&lt;/p&gt;
-&lt;p&gt;系统流程图、数据流图、数据字典、实体联系图、状态转换图、层次方框图、Warnier 图、IPO 图、层次图、HIPO 图、结构图、程序流程图、盒图、PAD 图、判定表、判定树、Jackson 图、流图、甘特图、工程网络图......&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;上面这堆名词是我在网上找来复制粘贴上去的，很多我也不知道是什么意思。&lt;/p&gt;
-&lt;p&gt;但是，我知道的是：尽管如此，在软件工程领域，bug 依然顽固地在那里。&lt;/p&gt;
-&lt;p&gt;每个软件工程师，不管是用什么范式，什么语言，什么版本，什么工具，怎么提前构架，设计，近乎都不可避免地，会写出 bug。&lt;/p&gt;
-&lt;p&gt;软件行业很多研究结果都表明：并没有明确的证据说明：使用了这些工具，软件工程中的 bug 就减少了。&lt;/p&gt;
-&lt;p&gt;甚至，我在网上找到了一篇“奇怪”的论文，这篇论文的研究表示：强制员工遵循一些代码书写规范，可能导致项目工程中有更多的 bug。这篇论文的链接在这里：&lt;a href="https://repository.tudelft.nl/islandora/object/uuid:646de5ba-eee8-4ec8-8bbc-2c188e1847ea?collection=research"&gt;https://repository.tudelft.nl/islandora/object/uuid:646de5ba-eee8-4ec8-8bbc-2c188e1847ea?collection=research&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;提高代码质量的技术手段层出不穷，但似乎都效果有限。那么，还有什么方式，能够真正提高代码质量？&lt;/p&gt;
-&lt;p&gt;国外技术专家 Hillel Wayne 有一个观点，让我拍案叫绝。&lt;/p&gt;
-&lt;p&gt;他的核心思想很简单。既然代码都是人写的，那么 bug 也就是人写的。所以，除了改善工具以外，可能，另外一个非常重要的，被很多人忽视的方式是：改善写代码的人。&lt;/p&gt;
-&lt;p&gt;怎么“改善写代码的人”？&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;首当其冲的，就是&lt;strong&gt;睡眠&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;无数科学的研究，已经确定无疑地告诉了我们：睡眠将极大地影响正常人的工作水平，甚至是基础认知能力。&lt;/p&gt;
-&lt;p&gt;2018 年，IEEE Transactions on Software Engineering 上的的一篇论文，用实验证明了，睡眠剥夺以后的程序员，将丧失大部分工作技能——别说想明白逻辑了，此时，他们可能连 &lt;code&gt;ls&lt;/code&gt; 是什么都不知道了，不经意间，就 &lt;code&gt;rm -rf/&lt;/code&gt; 了。&lt;/p&gt;
-&lt;p&gt;至于长期缺乏睡眠，导致的工作能力的降低，相关研究不要太多。写一两本书是绝对没问题的。缺乏睡眠等于工作能力降低，这简直是常识。&lt;/p&gt;
-&lt;p&gt;在很多行业，是禁止“疲劳工作”的。最典型的例子是，在运输行业，大部分正规运输公司，都会要求跑长途的司机，期间必须休息一定时间，以避免“疲劳驾驶”。&lt;/p&gt;
-&lt;p&gt;而在美国，一些医院也规定，护士不得连续工作超过一定时间。因为，无数的研究都在表明，缺乏睡眠的护士，将犯更多错误。&lt;/p&gt;
-&lt;p&gt;可能很多同学会说，司机和护士的工作，关乎人的性命。程序员不就是坐在办公室里写代码吗？哪里有那么严重？&lt;/p&gt;
-&lt;p&gt;对于有这个疑问的同学，我建议读一读上周我的公众号文章：&lt;a href="https://github.com/liuyubobobo/my-blog/blob/master/2019/2019-11-21/"&gt;《浮点计算引发的血案》&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;这个年代，很多程序员的工作，也关乎人的性命。&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;另外一点，就是&lt;strong&gt;工作时长&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;关于工作时长对工作效率的影响，也历史悠久。早在 1980 年，美国人就系统地研究过这个问题。&lt;/p&gt;
-&lt;p&gt;其中，最有名的研究，是以建筑工人作为基础进行研究的。那个年代，也是美国经济最繁盛的时期，美国各地都在建建建，因此，也有大量的工人样本供研究。&lt;/p&gt;
-&lt;p&gt;1980 年，美国的商业圆桌报告指出，如果建筑工人一周工作时间超过 50 个小时，那么在 8-10 周以后，他们的效率就会下降到原来的 76%。也就是说，8-10 周以后，即使这些工人继续每周工作 50 个小时，他们的实际效率，只等于原先的 38 个小时。&lt;/p&gt;
-&lt;p&gt;如果每周工作 60 个小时，他们的效率会降低的更快。在两个月的时间里，这种极度的低效将表现出来。也就说&lt;strong&gt;同样两个月的时间，每周工作 60 个小时的工人，工作效率还不如每周只工作 40 个小时的工人。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;2004 年，美国疾病控制中心（CDC）的另一项研究，从疾病的角度出发，证实了：过长的工作时间，还将为工人们带来不可逆的健康隐患。&lt;/p&gt;
-&lt;p&gt;既然如此，那为什么要每周多工作 20 个小时？&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;最后一个重要的因素，就是&lt;strong&gt;压力&lt;/strong&gt;。压力也将急剧降低一个人的工作效率。&lt;/p&gt;
-&lt;p&gt;全世界范围，关于压力的研究，也是在近十几二十年兴起的。越来越多的人，开始关注心理健康的问题。&lt;/p&gt;
-&lt;p&gt;美国疾病控制中心使用护士群体作为研究对象，确凿地证明了：压力越大，越容易犯错，效率越低。&lt;/p&gt;
-&lt;p&gt;由于关于压力的大多数研究，也就是近十年的事情，而近十年，全球软件行业工作者爆炸式地增长。所以，很多研究，可以直接使用软件工程师作为研究对象。&lt;/p&gt;
-&lt;p&gt;结论呢？很简单：工程师越快乐，越幸福，压力越小，解决问题的能力越强。&lt;/p&gt;
-&lt;p&gt;有兴趣的同学，可以直接搜索这篇论文：&lt;/p&gt;
-&lt;p&gt;&lt;img alt="stress" src="https://github.com/liuyubobobo/my-blog/raw/master/2019/2019-11-26/stress.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;大家可以看到：无数的研究都在告诉我们，睡眠，工作时长，和压力，这些因素，都将极大地影响软件工程师的效率。&lt;/p&gt;
-&lt;p&gt;那么问题来了。&lt;/p&gt;
-&lt;p&gt;为什么在大多数情况下，一个软件工程师写了一个 bug，大多数人会说：&lt;/p&gt;
-&lt;p&gt;如果你使用 XX 语言，就不会产生这个 bug；&lt;/p&gt;
-&lt;p&gt;或者说，如果你多做一组单元测试，就能更早地发现这个 bug；&lt;/p&gt;
-&lt;p&gt;或者说，如果引入 Pair Programming 的机制，发现这个 bug 的概率更大。&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;为什么没有人说：&lt;/p&gt;
-&lt;p&gt;如果你昨天多睡两个小时，就不会写出这个 bug？&lt;/p&gt;
-&lt;p&gt;如果保持每周只工作 40 个小时，而不要过度劳累，就不会写出这个 bug？&lt;/p&gt;
-&lt;p&gt;或者如果不要压力太大，应该使用 XX 或者 YY 的方式缓解压力，就不会写出这个 bug？&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;这些问题初听起来，似乎非常好笑。但是仔细想想，不无道理。&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;一直关注我的公众号的同学都知道，我从来不提倡 996。&lt;/p&gt;
-&lt;p&gt;这个不提倡背后，还真不仅仅是在为每一个开发者着想。&lt;/p&gt;
-&lt;p&gt;我也是在为资本家们着想啊！&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;最近的网易暴力裁员事件，想必大家都知道。&lt;/p&gt;
-&lt;p&gt;对于这件事情，各路媒体的报道已经铺天盖地了，我不想赘述了。&lt;/p&gt;
-&lt;p&gt;对于其中的劳动纠纷，我想后续就听法律的就好了。&lt;/p&gt;
-&lt;p&gt;但是，HR 在处理整个事情过程中的不近人情，是有目共睹。尤其是还给员工扣上了有“反动倾向”的帽子，在今年上半年这样一个敏感时期做出这样的行为，简直可以说是恶毒了。&lt;/p&gt;
-&lt;p&gt;不知道这样的做法，会不会让很多网易内部员工黯然心伤，压力倍增，从而大大降低工作效率？&lt;/p&gt;
-&lt;p&gt;网易这种体量的公司，工作效率的些许降低，折算成人民币，应该也不是一个小数目。不知道这笔账，要不要计算到 HR 的 KPI 中？&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;所以，如果看了这篇文章，有的同学正在创业，或者以后将要创业；有的同学正在带团队，或者以后将要带团队，在思考如何提高团队效率的问题上，可能，除了引入各种奇怪的技术工具和协同机制以外，也需要考虑一下维护团队成员的工作与生活的平衡。&lt;/p&gt;
-&lt;p&gt;毕竟，&lt;strong&gt;作为管理者，管理的是人。所有的工作，都是人做出来的。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;管理者的管理方案，至少要让团队能够感受到：人，是重要的。&lt;/p&gt;
-&lt;p&gt;因为：&lt;strong&gt;人，真的是最重要的。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;大家加油！&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;然后，今天的结尾多说一句：&lt;strong&gt;大家加油一天，晚上也好好休息！：）&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-&lt;p&gt;参考资料：&lt;a href="https://increment.com/teams/the-epistemology-of-software-quality"&gt;https://increment.com/teams/the-epistemology-of-software-quality&lt;/a&gt;&lt;/p&gt;</content><link href="https://github.com/liuyubobobo/my-blog/blob/master/2019/2019-11-26/readme.md" rel="alternate"/></entry></feed>
+&lt;p&gt;&lt;strong&gt;大家加油！&lt;/strong&gt;&lt;/p&gt;</content><link href="https://github.com/liuyubobobo/my-blog/blob/master/2019/2019-12-03/readme.md" rel="alternate"/></entry></feed>
